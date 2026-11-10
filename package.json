@@ -1,0 +1,29 @@
+{
+  "name": "chartshot-react-email-weekly-digest",
+  "description": "A React Email weekly digest with charts drawn by Chartshot.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env node_modules/react-email/dist/cli/index.mjs dev",
+    "export": "email export",
+    "send": "tsx --env-file-if-exists=.env send.tsx"
+  },
+  "dependencies": {
+    "@lglab/chartshot": "^1.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-email": "^6.11.10",
+    "resend": "^6.37.0"
+  },
+  "devDependencies": {
+    "@react-email/ui": "^6.11.10",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.2.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
